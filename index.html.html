@@ -1,0 +1,158 @@
+<html>
+<head>
+<title>Google Clone</title>
+<style>
+    html,body{
+        margin:0;
+        height:100%;
+    }
+    #nav{
+        display:flex;
+        justify-content:flex-end;
+        margin-top:15px;
+    }
+    #nav a{
+        margin-right:20px;
+    }
+    #nav a.topimage{
+        width:20px;
+        height:20px;
+        background-color:red;
+        border-radius:10px;
+    }
+    #middle{
+        flex-grow:1;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+    }
+    #logo{
+        text-align:center;
+    }
+    a{
+        text-decoration:none;
+    }
+    a:hover{
+        text-decoration:underline;
+    }
+    #searchbarcontainer{
+        margin-top:20px;
+        text-align:center;
+        position:relative;
+    }
+    #search,#voice{
+        position:absolute;
+        top:0;
+        height:100%;
+        display:flex;
+        justify-content:center;
+        text-align:center;
+    }
+    #search{
+        margin:10px;
+        left:10px;
+    }
+    #voice{
+        margin:10px;
+        right:10px;
+    }
+    #searchbar{
+        padding-top:10px;
+        padding-bottom:10px;
+        padding-left:30px;
+        padding-right:30px;
+        outline:0;
+        width:500px;
+        border-radius:15px;
+        border:1px solid  #c4c4c4;
+    }
+    #searchbar:hover{
+        box-shadow:0 0 10px 2px black;
+    }
+    #buttons{
+        margin-top:20px;
+        display:flex;
+        justify-content:center;
+    }
+    .button{
+        margin-left:10px;
+        margin-right:10px;
+        padding:5px 10px;
+        cursor:pointer;
+        background: rgb(231,231,231);
+        border-radius:3px;
+        border:2px solid transparent;
+    }
+    .button:hover{
+        box-shadow:0 0 2px 1px black;
+        border: 2px solid #eee;
+    }
+    #links{
+        margin-top:20px;
+        text-align:center;
+    }
+    body{
+        display:flex;
+        flex-direction:column;
+    }
+    #footer-content{
+        background:#eee;
+        border-top:1px solid black;
+        padding:10px;
+      
+       
+    }
+  
+</style>
+
+</head>
+<body>
+<div id="nav">
+    <a class="toplink">Gmail</a>
+    <a class="toplink">Images </a>
+    <a class="topimage"></a>
+    
+</div>
+<div id="middle">
+<div id="logo">
+    <img src="https://www.google.co.in/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"/>
+</div>
+<div id="searchbarcontainer">
+    <div id="search">0</div>
+    <input id ="searchbar"type="text">
+    <div id="voice">0</div>
+</div>
+<div id="buttons">
+    <div class="button">
+       Google Search
+    </div>
+    <div class="button">
+        I'm feeling lucky
+    </div>
+</div>
+<div id="links">
+    Google offered in : <a href="">X</a><a href="">Y</a>
+</div>
+ 
+
+
+ </div>
+<div id="footer">
+<div id="footer-content">
+    <a>Advertising</a>
+    <a>Business</a>
+    <a>About</a>
+    <a>How search works</a>
+</div>
+
+</div>
+
+
+</body>
+
+
+
+
+
+</html>
